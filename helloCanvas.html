@@ -7,6 +7,14 @@
   <script type="text/javascript">
     var c = document.querySelector("#c");
     var ctx = c.getContext("2d");
+
+    var image = new Image();
+    image.onload = function(){
+      console.log("Loaded Image");
+      ctx.drawImage(image, 0, 0, c.width, c.height);
+    };
+
+    image.src = "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHcMwPef8pcBDb569f-AStrC2FYQjqpvLpkks6pGYpsGhLaRf2"
   </script>
 
 </body>
