@@ -12,6 +12,10 @@
     image.onload = function(){
       console.log("Loaded Image");
       ctx.drawImage(image, 0, 0, c.width, c.height);
+      // var saveImage = c.toDataURL();
+      // console.log("saveImage = ");
+      // console.log(saveImage);
+      // window.open(saveImage);
     };
 
     image.src = "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHcMwPef8pcBDb569f-AStrC2FYQjqpvLpkks6pGYpsGhLaRf2"
